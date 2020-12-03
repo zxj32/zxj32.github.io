@@ -64,6 +64,47 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         
+          <tr onmouseout="un_gan_stop()" onmouseover="un_gan_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='un_gan_image'>
+                  <img src='images/un_gan_after1.png' width="160"></div>
+                <img src='images/un_gan_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function un_gan_start() {
+                  document.getElementById('un_gan_image').style.opacity = "1";
+                }
+
+                function un_gan_stop() {
+                  document.getElementById('un_gan_image').style.opacity = "0";
+                }
+                un_gan_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://zxj32.github.io/">
+                <papertitle>Multidimensional Uncertainty-Aware Evidential Neural Networks</papertitle>
+              </a>
+              <br>
+              <a href="https://www.linkedin.com/in/yibo-hu/">Yibo Hu</a>,
+              <a href="https://www.linkedin.com/in/yuzhe-ou-207b16154/">Yuzhe Ou</a>,
+              <strong>Xujiang Zhao</strong>,
+              <a href="https://personal.utdallas.edu/~fxc190007/">Feng Chen</a>,
+              <a href="https://people.cs.vt.edu/~jicho/">Jin-hee Cho</a>,
+              <br>
+               <em>AAAI</em>, 2021
+              <br>
+              <a href="https://zxj32.github.io/">paper</a> /
+              <a href="https://zxj32.github.io/">code</a> /
+              <a href="https://zxj32.github.io/">slides</a>
+              <p></p>
+              <p>By considering the multidimensional uncertainty, we proposed a novel uncertainty-aware evidential NN called WGAN-ENN (WENN) for solving an out-of-distribution (OOD) detection problem.</p>
+            </td>
+          </tr> 
+          
+          
+          
           <tr onmouseout="ff_stop()" onmouseover="ff_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -180,46 +221,7 @@
               <p></p>
               <p>We study the key causes about the negative impact of OODs (boundary OODs and faraway ODDs) on SSL and proposed a simple unified robust SSL approach for many existing SSL algorithms in order to improve their robustness against OODs.</p>
             </td>
-          </tr> 
-
-          <tr onmouseout="un_gan_stop()" onmouseover="un_gan_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='un_gan_image'>
-                  <img src='images/un_gan_after1.png' width="160"></div>
-                <img src='images/un_gan_before.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function un_gan_start() {
-                  document.getElementById('un_gan_image').style.opacity = "1";
-                }
-
-                function un_gan_stop() {
-                  document.getElementById('un_gan_image').style.opacity = "0";
-                }
-                un_gan_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://zxj32.github.io/">
-                <papertitle>Multidimensional Uncertainty-Aware Evidential Neural Networks</papertitle>
-              </a>
-              <br>
-              <a href="https://www.linkedin.com/in/yibo-hu/">Yibo Hu</a>,
-              <a href="https://www.linkedin.com/in/yuzhe-ou-207b16154/">Yuzhe Ou</a>,
-              <strong>Xujiang Zhao</strong>,
-              <a href="https://personal.utdallas.edu/~fxc190007/">Feng Chen</a>,
-              <a href="https://people.cs.vt.edu/~jicho/">Jin-hee Cho</a>,
-              <br>
-               <em>AAAI</em>, 2021
-              <br>
-              <a href="https://zxj32.github.io/">paper</a> /
-              <a href="https://zxj32.github.io/">code</a> /
-              <a href="https://zxj32.github.io/">slides</a>
-              <p></p>
-              <p>By considering the multidimensional uncertainty, we proposed a novel uncertainty-aware evidential NN called WGAN-ENN (WENN) for solving an out-of-distribution (OOD) detection problem.</p>
-            </td>
-          </tr> 
+          </tr>
 
           <tr onmouseout="un_adv_stop()" onmouseover="un_adv_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
