@@ -43,6 +43,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>News</heading>
               <p>
+                <li>09/2021: one paper got accepted by <strong>NeurIPS 2021</strong></li>
                 <li>09/2021: I will serve as the PC Member of <strong>AAAI 2022</strong></li>
                 <li>08/2021: one paper got accepted by <strong>EMNLP 2021</strong></li>
                 <li>08/2021: I will serve as the PC Member of <strong>WSDM 2022</strong></li>
@@ -85,8 +86,46 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+           
+           <tr onmouseout="RETRIEVE_stop()" onmouseover="RETRIEVE_start()" >
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='RETRIEVE_image'>
+                  <img src='images/RETRIEVE_after1.png' width="160"></div>
+                <img src='images/RETRIEVE_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function rssl_start() {
+                  document.getElementById('RETRIEVE_image').style.opacity = "1";
+                }
+
+                function rssl_stop() {
+                  document.getElementById('RETRIEVE_image').style.opacity = "0";
+                }
+                RETRIEVE_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2106.07760.pdf">
+                <papertitle>RETRIEVE: Coreset Selection for Efficient and Robust Semi-Supervised Learning</papertitle>
+              </a>
+              <br>
+              <a href="https://www.linkedin.com/in/krishnateja-killamsetty/">Krishnateja Killamsetty</a>,
+              <strong>Xujiang Zhao</strong>,
+              <a href="https://sites.google.com/view/rishabhiyer/home">Rishabh Iyer</a>,
+              <a href="https://personal.utdallas.edu/~fxc190007/">Feng Chen</a>,
+              <br>
+              <em>NeurIPS</em>, 2021
+              <br>
+              <a href="https://arxiv.org/pdf/2106.07760.pdf">paper</a> /
+              <a href="https://zxj32.github.io/">code</a> /
+              <a href="https://zxj32.github.io/">slides</a>
+              <p></p>
+              <p>We propose a subset selection algorithm in semi-supervised learning to speed up the SSL training. In addition, this algorithm achieve a better performance when unlabeled data consists of Out-of-Distribution (OOD) data and imbalance.</p>
+            </td>
+          </tr>
           
-           <tr onmouseout="emnlp_2021_stop()" onmouseover="emnlp_2021_start()">
+           <tr onmouseout="emnlp_2021_stop()" onmouseover="emnlp_2021_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='emnlp_2021_image'>
