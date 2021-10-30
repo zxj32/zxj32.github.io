@@ -88,6 +88,47 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
            
+          <tr onmouseout="ICASSP2021_stop()" onmouseover="ICASSP2021_start()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ICASSP2021_image'>
+                  <img src='images/ICASSP2021_after.png' width="160"></div>
+                <img src='images/ICASSP2021_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function ICASSP2021_start() {
+                  document.getElementById('ICASSP2021_image').style.opacity = "1";
+                }
+
+                function ICASSP2021_stop() {
+                  document.getElementById('ICASSP2021_image').style.opacity = "0";
+                }
+                ICASSP2021_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://zxj32.github.io/">
+                <papertitle>SEED: Sound Event Early Detection via Evidential Uncertainty</papertitle>
+              </a>
+              <br>
+              <strong>Xujiang Zhao</strong>,
+              <a href="https://xuczhang.github.io/">Xuchao Zhang</a>,
+              <a href="https://chengw07.github.io/">Wei Cheng</a>,
+              <a href="https://www.nec-labs.com/wenchao-yu">Wenchao Yu</a>,
+              <a href="https://cseweb.ucsd.edu/~yuc007/">Yuncong Chen</a>,
+              <a href=https://haifengchen.gitlab.io/intro/">Haifeng Chen</a>,
+              <a href="https://personal.utdallas.edu/~fxc190007/">Feng Chen</a>,
+              <br>
+              <em>Preprint</em>
+              <br>
+              <a href="https://zxj32.github.io/">paper</a> /
+              <a href="https://zxj32.github.io/">code</a> /
+              <a href="https://zxj32.github.io/">slides</a>
+              <p></p>
+              <p>we propose a novel Polyphonic Evidential Neural Network (PENet) to model the evidential uncertainty of the class probability with Beta distribution. to solve the sound event early detection problem.</p>
+            </td>
+          </tr>
+          
            <tr onmouseout="RETRIEVE_stop()" onmouseover="RETRIEVE_start()" >
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
