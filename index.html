@@ -132,6 +132,44 @@
             </td>
           </tr>
           
+          <tr onmouseout="PAKDD2022_stop()" onmouseover="PAKDD2022_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='PAKDD2022_image'>
+                  <img src='images/PAKDD2022_after.png' width="160"></div>
+                <img src='images/PAKDD2022_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function PAKDD2022_start() {
+                  document.getElementById('PAKDD2022_image').style.opacity = "1";
+                }
+
+                function PAKDD2022_stop() {
+                  document.getElementById('PAKDD2022_image').style.opacity = "0";
+                }
+                PAKDD2022_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://zxj32.github.io/">
+                <papertitle>Layer Adaptive Deep Neural Networks for Out-of-distribution Detection</papertitle>
+              </a>
+              <br>
+              <a href="https://www.linkedin.com/in/haoliang-wang-0713b7108/">Haoliang Wang</a>,
+              <a href="https://charliezhaoyinpeng.github.io/homepage/">Chen Zhao</a>,
+              <strong>Xujiang Zhao</strong>,
+              <a href="https://personal.utdallas.edu/~fxc190007/">Feng Chen</a>,
+              <br>
+              <em>PAKDD</em>, 2022
+              <br>
+              <a href="https://zxj32.github.io/">paper</a> /
+              <a href="https://zxj32.github.io/">code</a> /
+              <a href="https://zxj32.github.io/">slides</a>
+              <p></p>
+              <p>In this paper, we proposed a novel layer-adaptive OOD detection framework (LA-OOD) for DNNs that can fully utilize the intermediate layers’ outputs.</p>
+            </td>
+          </tr>
+                                                
            <tr onmouseout="RETRIEVE_stop()" onmouseover="RETRIEVE_start()" >
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
