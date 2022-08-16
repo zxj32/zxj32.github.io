@@ -94,6 +94,45 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
            
+          <tr onmouseout="CIKM2022_stop()" onmouseover="CIKM2022_start()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='CIKM2022_image'>
+                  <img src='images/CIKM2022_after.png' width="160"></div>
+                <img src='images/CIKM2022_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function CIKM2022_start() {
+                  document.getElementById('CIKM2022_image').style.opacity = "1";
+                }
+
+                function CIKM2022_stop() {
+                  document.getElementById('CIKM2022_image').style.opacity = "0";
+                }
+                ICASSP2021_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/CIKM_2022.pdf">
+                <papertitle>Calibrate Automated Graph Neural Network via Hyperparameter Uncertainty</papertitle>
+              </a>
+              <br>
+              <a href="https://www.linkedin.com/in/xueying-yang-740425129/">Xueying Yang</a>
+              <a href="https://zxj32.github.io/">Jiamian Wang</a>,
+              <strong>Xujiang Zhao</strong>,
+              <a href="http://sheng-li.org/">Sheng Li</a>,
+              <a href="https://ztao.cc/">Zhiqiang Tao</a>,
+              <br>
+              <em>CIKM</em>, 2022(Short paper)
+              <br>
+              <a href="data/CIKM_2022.pdf">paper</a> /
+              <a href="https://zxj32.github.io/">code</a> /
+              <a href="https://zxj32.github.io/">slides</a>
+              <p></p>
+              <p>In this paer, we investigate automated GNN calibration by marrying uncertainty estimation to the hyperparameter optimization (HPO) problem. </p>
+            </td>
+          </tr>
+          
           <tr onmouseout="ICASSP2021_stop()" onmouseover="ICASSP2021_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
