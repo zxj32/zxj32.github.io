@@ -95,7 +95,45 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-           
+          
+          <tr onmouseout="rssl_stop()" onmouseover="rssl_start()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='rssl_image'>
+                  <img src='images/rssl_after1.png' width="160"></div>
+                <img src='images/rssl_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function rssl_start() {
+                  document.getElementById('rssl_image').style.opacity = "1";
+                }
+
+                function rssl_stop() {
+                  document.getElementById('rssl_image').style.opacity = "0";
+                }
+                rssl_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/ICDM_2022.pdf">
+                <papertitle>How Out-of-Distribution Data Hurts Semi-Supervised Learning</papertitle>
+              </a>
+              <br>
+              <strong>Xujiang Zhao</strong>,
+              <a href="https://www.linkedin.com/in/krishnateja-killamsetty/">Krishnateja Killamsetty</a>,
+              <a href="https://sites.google.com/view/rishabhiyer/home">Rishabh Iyer</a>,
+              <a href="https://personal.utdallas.edu/~fxc190007/">Feng Chen</a>,
+              <br>
+              <em>ICDM 2022</em>
+              <br>
+              <a href="data/ICDM_2022.pdf">paper</a> /
+              <a href="https://zxj32.github.io/">code</a> /
+              <a href="https://zxj32.github.io/">slides</a>
+              <p></p>
+              <p>We study the key causes about the negative impact of OODs (boundary OODs and faraway ODDs) on SSL and proposed a simple unified robust SSL approach for many existing SSL algorithms in order to improve their robustness against OODs.</p>
+            </td>
+          </tr>
+          
           <tr onmouseout="CIKM2022_stop()" onmouseover="CIKM2022_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -458,44 +496,6 @@
               <p>A novel multi-source uncertainty prediction approach that enables deep learning models to be actively trained with much less labeled data.</p>
             </td>
           </tr> 
-
-           <tr onmouseout="rssl_stop()" onmouseover="rssl_start()" bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='rssl_image'>
-                  <img src='images/rssl_after1.png' width="160"></div>
-                <img src='images/rssl_before.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function rssl_start() {
-                  document.getElementById('rssl_image').style.opacity = "1";
-                }
-
-                function rssl_stop() {
-                  document.getElementById('rssl_image').style.opacity = "0";
-                }
-                rssl_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2010.03658">
-                <papertitle>Robust Semi Supervised Learning with Out of Distribution Data</papertitle>
-              </a>
-              <br>
-              <strong>Xujiang Zhao</strong>,
-              <a href="https://www.linkedin.com/in/krishnateja-killamsetty/">Krishnateja Killamsetty</a>,
-              <a href="https://sites.google.com/view/rishabhiyer/home">Rishabh Iyer</a>,
-              <a href="https://personal.utdallas.edu/~fxc190007/">Feng Chen</a>,
-              <br>
-              <em>Preprint</em>
-              <br>
-              <a href="https://arxiv.org/abs/2010.03658">paper</a> /
-              <a href="https://zxj32.github.io/">code</a> /
-              <a href="https://zxj32.github.io/">slides</a>
-              <p></p>
-              <p>We study the key causes about the negative impact of OODs (boundary OODs and faraway ODDs) on SSL and proposed a simple unified robust SSL approach for many existing SSL algorithms in order to improve their robustness against OODs.</p>
-            </td>
-          </tr>
 
           <tr onmouseout="un_adv_stop()" onmouseover="un_adv_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
