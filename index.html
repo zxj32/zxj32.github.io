@@ -156,6 +156,47 @@
             </td>
           </tr>
           
+          <tr onmouseout="reasoning2022_stop()" onmouseover="reasoning2022_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='reasoning2022_image'>
+                  <img src='images/reasoning2022_after.png' width="160"></div>
+                <img src='images/reasoning2022_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function reasoning2022_after_start() {
+                  document.getElementById('reasoning2022_after_image').style.opacity = "1";
+                }
+
+                function reasoning2022_after_stop() {
+                  document.getElementById('reasoning2022_after_image').style.opacity = "0";
+                }
+                reasoning2022_after_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2302.02093.pdf">
+                <papertitle>Knowledge-enhanced Neural Machine Reasoning: A Review</papertitle>
+              </a>
+              <br>
+              <a href="https://www.tanmoychowdhury.com/">Tanmoy Chowdhury</a>,
+              <a href="https://lingchen0331.github.io/">Chen Ling</a>,
+              <a href="https://xuczhang.github.io/">Xuchao Zhang</a>,
+              <strong>Xujiang Zhao</strong>,
+              <a href="https://baithebest.github.io/publications/">Guangji Bai</a>,
+              <a href="https://sites.google.com/view/jpei/jian-peis-homepage">Jian Pei</a>,
+              <a href="https://haifengchen.gitlab.io/intro/">Haifeng Chen</a>,
+              <a href="https://cs.emory.edu/~lzhao41/">Liang Zhao</a>,              
+              <br>
+              <em>Preprint</em>, 2023
+              <br>
+              <a href="https://arxiv.org/pdf/2302.02093.pdf">paper</a> /
+              <a href="data/ICASSP2022_slides.pdf">slides</a>
+              <p></p>
+              <p> In this survey paper, we provide a comprehensive technical review of the existing knowledge-enhanced reasoning techniques across the diverse range of application domains.</p>
+            </td>
+          </tr>
+          
           <tr onmouseout="uncertainty2022_stop()" onmouseover="uncertainty2022_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -168,7 +209,7 @@
                   document.getElementById('uncertainty2022_after_image').style.opacity = "1";
                 }
 
-                function ICASSP2023_stop() {
+                function uncertainty2022_after_stop() {
                   document.getElementById('uncertainty2022_after_image').style.opacity = "0";
                 }
                 uncertainty2022_after_stop()
