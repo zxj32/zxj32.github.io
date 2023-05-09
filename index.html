@@ -113,6 +113,49 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
+         <tr onmouseout="ICASSP2023_stop()" onmouseover="ICASSP2023_start()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ICASSP2023_image'>
+                  <img src='images/ICASSP2023_after.png' width="160"></div>
+                <img src='images/ICASSP2023_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function ICASSP2023_start() {
+                  document.getElementById('ICASSP2023_image').style.opacity = "1";
+                }
+
+                function ICASSP2023_stop() {
+                  document.getElementById('ICASSP2023_image').style.opacity = "0";
+                }
+                ICASSP2023_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/ICASSP2023_paper.pdf">
+                <papertitle>Multi-Label Temporal Evidential Neural Networks for Early Event Detection</papertitle>
+              </a>
+              <br>
+              <strong>Xujiang Zhao</strong>,
+              <a href="https://xuczhang.github.io/">Xuchao Zhang</a>,
+              <a href="https://charliezhaoyinpeng.github.io/homepage/">Chen Zhao</a>,
+              <a href="https://people.cs.vt.edu/~jicho/">Jin-hee Cho</a>,
+              <a href="https://ieee-aess.org/contact/lance-kaplan">Lance Kaplan</a>,
+              <a href="https://csit.udc.edu/~djeong/">Dong Hyun Jeong</a>,
+              <a href="https://www.mn.uio.no/ifi/english/people/aca/josang/">Audun Jøsang</a>,
+              <a href="https://haifengchen.gitlab.io/intro/">Haifeng Chen</a>,
+              <a href="https://personal.utdallas.edu/~fxc190007/">Feng Chen</a>,
+              <br>
+              <em>ICASSP</em>, 2023
+              <br>
+              <a href="data/ICASSP2023_paper.pdf">paper</a> /
+              <a href="https://zxj32.github.io/">code</a> /
+              <a href="data/ICASSP2022_slides.pdf">slides</a>
+              <p></p>
+              <p> We study the problem of early event detection in multi-lable classification, and propose a novel framework, Multi-Label Temporal Evidential Neural Network (MTENN), for multi-label uncertainty estimation in temporal data..</p>
+            </td>
+          </tr>
+          
           <tr onmouseout="rssl_stop()" onmouseover="rssl_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
