@@ -116,7 +116,47 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr onmouseout="CIKM2023_stop()" onmouseover="CIKM2023_start()" bgcolor="#ffffd0">
+          <tr onmouseout="CIKM2023f_stop()" onmouseover="CIKM2023f_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='CIKM2023f_image'>
+                  <img src='images/CIKM2023f_after.png' width="160"></div>
+                <img src='images/CIKM2023f_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function CIKM2023f_start() {
+                  document.getElementById('CIKM2023f_image').style.opacity = "1";
+                }
+
+                function CIKM2023f_stop() {
+                  document.getElementById('CIKM2023f_image').style.opacity = "0";
+                }
+                CIKM2023f_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/CIKM2023f_paper.pdf">
+                <papertitle>Adaptation Speed Analysis for Fairness-aware Causal Models</papertitle>
+              </a>
+              <br>
+              <a Yujie Lin</a>,
+              <a href="https://charliezhaoyinpeng.github.io/homepage/">Chen Zhao</a>
+              <a href="https://shaoml114.github.io/">Minglai Shao</a>,
+              <strong>Xujiang Zhao</strong>,
+              <a href="https://haifengchen.gitlab.io/intro/">Haifeng Chen</a>,
+              <br>
+              <em>CIKM</em>, 2023
+              <br>
+              <a href="data/CIKM2023f_paper.pdf">paper</a> /
+              <a href="https://zxj32.github.io/">code</a> /
+              <p></p>
+              <p> This paper aims to explore spurious relationships in structural causal models (SCMs) that arise due to sensitive factors. .</p>
+            </td>
+          </tr>
+
+
+          
+          <tr onmouseout="CIKM2023_stop()" onmouseover="CIKM2023_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='CIKM2023_image'>
