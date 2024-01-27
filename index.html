@@ -115,7 +115,51 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+           <tr onmouseout="EMNLP2023_stop()" onmouseover="EMNLP2023_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='EMNLP2023_image'>
+                  <img src='images/EMNLP2023_after.png' width="160"></div>
+                <img src='images/EMNLP2023_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function EMNLP2023_start() {
+                  document.getElementById('EMNLP2023_image').style.opacity = "1";
+                }
 
+                function EMNLP2023_stop() {
+                  document.getElementById('EMNLP2023_image').style.opacity = "0";
+                }
+                EMNLP2023_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/EMNLP2023_paper.pdf">
+                <papertitle>Open-ended Commonsense Reasoning with Unrestricted Answer Scope</papertitle>
+              </a>
+              <br>
+              Chen Ling, 
+              Xuchao Zhang, 
+              <strong>Xujiang Zhao</strong>,
+              Yanchi Liu, 
+              Wei Cheng,
+              Mika Oishi,
+              Takao Osaki,
+              Katsushi Matsuda,
+              Haifeng Chen,
+              Liang Zhao,
+              <br>
+              <em>EMNLP</em>, 2023 (findings)
+              <br>
+              <a href="data/EMNLP2023_paper.pdf">paper</a> /
+              <a href="https://github.com/lingchen0331/KEEP">code</a> /
+              <p></p>
+              <p> We present an off-the-shelf framework KEEP to predict answers for open-ended commonsense reasoning without requiring answer candidates and a pre-defined answer scope.</p>
+            </td>
+          </tr>
+
+          
           <tr onmouseout="CIKM2023f_stop()" onmouseover="CIKM2023f_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -150,7 +194,7 @@
               <a href="data/CIKM2023f_paper.pdf">paper</a> /
               <a href="https://zxj32.github.io/">code</a> /
               <p></p>
-              <p> This paper aims to explore spurious relationships in structural causal models (SCMs) that arise due to sensitive factors. .</p>
+              <p> This paper aims to explore spurious relationships in structural causal models (SCMs) that arise due to sensitive factors.</p>
             </td>
           </tr>
 
