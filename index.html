@@ -112,7 +112,43 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-            <tr onmouseout="NAACL2024_2_stop()" onmouseover="NAACL2024_2_start()" bgcolor="#ffffd0">
+            <tr onmouseout="IJCAI2024_stop()" onmouseover="IJCAI2024_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='IJCAI2024_image'>
+                  <img src='images/IJCAI2024_after.png' width="160"></div>
+                <img src='images/IJCAI2024_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function IJCAI2024_start() {
+                  document.getElementById('IJCAI2024_image').style.opacity = "1";
+                }
+
+                function IJCAI2024_stop() {
+                  document.getElementById('IJCAI2024_image').style.opacity = "0";
+                }
+                IJCAI2024_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.ijcai.org/proceedings/2024/0504.pdf">
+                <papertitle>Towards Counterfactual Fairness-aware Domain Generalization in Changing Environments</papertitle>
+              </a>
+              <br>
+              Yujie Lin, Chen Zhao, Minglai Shao, Baoluo Meng,  <strong>Xujiang Zhao</strong>, Haifeng Chen
+              <br>
+              <em>IJCAI</em>, 2024
+              <br>
+              <a href="https://www.ijcai.org/proceedings/2024/0504.pdf">paper</a> /
+              <p></p>
+              <p> This paper has proposed a novel framework, DCFDG, to address issues of fairness within continuously evolving dynamic environments.</p>
+            </td>
+          </tr>
+
+
+
+          
+            <tr onmouseout="NAACL2024_2_stop()" onmouseover="NAACL2024_2_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='NAACL2024_2_image'>
@@ -127,7 +163,7 @@
                 function ENAACL2024_2_stop() {
                   document.getElementById('NAACL2024_2_image').style.opacity = "0";
                 }
-                NAACL2024_stop()
+                NAACL2024_2_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
