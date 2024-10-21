@@ -112,6 +112,42 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+            <tr onmouseout="NAACL2024_2_stop()" onmouseover="NAACL2024_2_start()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='NAACL2024_2_image'>
+                  <img src='images/NAACL2024_2_after.png' width="160"></div>
+                <img src='images/NAACL2024_2_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function NAACL2024_2_start() {
+                  document.getElementById('NAACL2024_2_image').style.opacity = "1";
+                }
+
+                function ENAACL2024_2_stop() {
+                  document.getElementById('NAACL2024_2_image').style.opacity = "0";
+                }
+                NAACL2024_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2405.06275">
+                <papertitle>Pruning as a Domain-specific LLM Extractor</papertitle>
+              </a>
+              <br>
+              Nan Zhang, Yanchi Liu, <strong>Xujiang Zhao</strong>, Wei Cheng, Runxue Bao, Rui Zhang, Prasenjit Mitra, Haifeng Chen
+              <br>
+              <em>NAACL</em>, 2024(findings)
+              <br>
+              <a href="https://arxiv.org/pdf/2405.06275">paper</a> /
+              <a href="https://github.com/psunlpgroup/D-Pruner">code</a> /
+              <p></p>
+              <p> We introduce D-PRUNER, an innovative unstructured dual-pruning method for domain-specific compression on LLM. It is able to extract a compressed, domain-specific, and task-agnostic LLM by identifying weights that are pivotal for both generality and specificity.</p>
+            </td>
+          </tr>
+
+
+          
           <tr onmouseout="NAACL2024_stop()" onmouseover="NAACL2024_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
