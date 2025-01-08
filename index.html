@@ -113,7 +113,41 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr onmouseout="EMNLP2024_stop()" onmouseover="IJCAI2024_start()">
+          <tr onmouseout="SDM2025_stop()" onmouseover="SDM2025_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='SDM2025_image'>
+                  <img src='images/SDM2025_after.png' width="160"></div>
+                <img src='images/SDM2025_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function SDM2025_start() {
+                  document.getElementById('SDM2025_image').style.opacity = "1";
+                }
+
+                function SDM2025_stop() {
+                  document.getElementById('SDM2025_image').style.opacity = "0";
+                }
+                SDM2025_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/SDM2025_paper.pdf">
+                <papertitle>Evidence-Based Out-of-Distribution Detection on Multi-Label Graphs</papertitle>
+              </a>
+              <br>
+              Ruomeng Ding, <strong>Xujiang Zhao</strong>, Chen Zhao, Minglai Shao, Zhengzhang Chen, Haifeng Chen
+              <br>
+              <em>SDM</em>, 2025
+              <br>
+              <a href="data/SDM2025_paper.pdf">paper</a> /
+              <a href="https://zxj32.github.io/">code</a> /
+              <p></p>
+              <p> In this paper, we introduce a novel evidential method, Multi-Label Evidential Graph Neural Networks, to predict uncertainty for multiple classes on graph data.</p>
+            </td>
+          </tr>
+          
+          <tr onmouseout="EMNLP2024_stop()" onmouseover="EMNLP2024_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='EMNLP2024_image'>
