@@ -116,6 +116,112 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="ICLR2025_stop()" onmouseover="ICLR2025_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ICLR2025_image'>
+                  <img src='images/ICLR2025_after.png' width="160"></div>
+                <img src='images/ICLR2025_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function ICLR2025_start() {
+                  document.getElementById('ICLR2025_image').style.opacity = "1";
+                }
+
+                function ICLR2025_stop() {
+                  document.getElementById('ICLR2025_image').style.opacity = "0";
+                }
+               ICLR2025_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openreview.net/pdf?id=MCHuGOkExF">
+                <papertitle>SFS: Smarter Code Space Search Improves LLM Inference Scaling</papertitle>
+              </a>
+              <br>
+             Jonathan Light, Yue Wu, Yiyou Sun, Wenchao Yu, Yanchi Liu, <strong>Xujiang Zhao</strong>,  <em>et al.</em>
+              <br>
+              <em>ICLR</em>, 2025
+              <br>
+              <a href="https://openreview.net/pdf?id=MCHuGOkExF">paper</a> /
+              <a href="https://github.com/codespace-optimization/sfs">code</a> /
+              <a href="https://codespace-optimization.github.io/">project</a> /
+
+              <p></p>
+              <p> In this paper, we have shown that framing code generation as an optimization task over the code space and applying SCATTERED FOREST SEARCH is highly effective..</p>
+            </td>
+          </tr>
+
+          
+          <tr onmouseout="NAACL2025_mix_stop()" onmouseover="NAACL2025_mix_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='NAACL2025_mix_image'>
+                  <img src='images/NAACL2025_mix_after.png' width="160"></div>
+                <img src='images/NAACL2025_mix_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function NAACL2025_mix_start() {
+                  document.getElementById('NAACL2025_mix_image').style.opacity = "1";
+                }
+
+                function NAACL2025_mix_stop() {
+                  document.getElementById('NAACL2025_mix_image').style.opacity = "0";
+                }
+                NAACL2025_mix_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openreview.net/pdf?id=4i8w8ETT1i">
+                <papertitle>MixLLM: Dynamic Routing in Mixed Large Language Models</papertitle>
+              </a>
+              <br>
+              Xinyuan Wang, Yanchi Liu, Wei Cheng, <strong>Xujiang Zhao</strong>,  <em>et al.</em>
+              <br>
+              <em>NAACL</em>, 2025
+              <br>
+              <a href="https://openreview.net/pdf?id=4i8w8ETT1i">paper</a> /
+              <a href="https://openreview.net/pdf?id=4i8w8ETT1i">code</a> /
+              <p></p>
+              <p> In this paper, we proposed MixLLM, a dynamic routing system that selects the most suitable LLM for each query by balancing response quality, cost, and latency.</p>
+            </td>
+          </tr>
+
+
+          <tr onmouseout="NAACL2025_position_stop()" onmouseover="NAACL2025_position_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='NAACL2025_position_image'>
+                  <img src='images/NAACL2025_position_after.png' width="160"></div>
+                <img src='images/NAACL2025_position_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function NAACL2025_position_start() {
+                  document.getElementById('NAACL2025_position_image').style.opacity = "1";
+                }
+
+                function NAACL2025_position_stop() {
+                  document.getElementById('NAACL2025_position_image').style.opacity = "0";
+                }
+                NAACL2025_position_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openreview.net/pdf?id=yBvR5bbfLK">
+                <papertitle>Position Really Matters: Towards a Holistic Approach for Prompt Tuning</papertitle>
+              </a>
+              <br>
+              Xianjun Yang, Wei Cheng, <strong>Xujiang Zhao</strong>, Wenchao Yu, Linda Ruth Petzold, Haifeng Chen
+              <br>
+              <em>NAACL</em>, 2025 (Findings)
+              <br>
+              <a href="https://openreview.net/pdf?id=yBvR5bbfLK">paper</a> /
+              <a href="https://openreview.net/pdf?id=4i8w8ETT1i">code</a> /
+              <p></p>
+              <p> In this paper, we first derive a unified view of prompt tuning and then present a novel dynamic prompting approach that can significantly improve the performance of prompt tuning while adding only a few additional parameters..</p>
+            </td>
+          </tr>
+          
           <tr onmouseout="SDM2025_stop()" onmouseover="SDM2025_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -247,7 +353,7 @@
               <br>
               Nan Zhang, Yanchi Liu, <strong>Xujiang Zhao</strong>, Wei Cheng, Runxue Bao, Rui Zhang, Prasenjit Mitra, Haifeng Chen
               <br>
-              <em>NAACL</em>, 2024(findings)
+              <em>NAACL</em>, 2024 (findings)
               <br>
               <a href="https://arxiv.org/pdf/2405.06275">paper</a> /
               <a href="https://github.com/psunlpgroup/D-Pruner">code</a> /
