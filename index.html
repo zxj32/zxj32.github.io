@@ -123,7 +123,41 @@
          <heading>Selected Publications</heading>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="NIPS2025_stop()" onmouseover="NIPS2025_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='NIPS2025_image'>
+                  <img src='images/NIPS2025_after2.png' width="160"></div>
+                <img src='images/NIPS2025_before2.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function NIPS2025_start() {
+                  document.getElementById('NIPS2025_image').style.opacity = "1";
+                }
 
+                function NIPS2025_stop() {
+                  document.getElementById('NIPS2025_image').style.opacity = "0";
+                }
+               NIPS2025_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.arxiv.org/abs/2510.16916">
+                <papertitle>SolverLLM: Leveraging Test-Time Scaling for Optimization Problem via LLM-Guided Search</papertitle>
+              </a>
+              <br>
+             Dong li, <strong>Xujiang Zhao</strong>, Linlin Yu, <em>et al.</em>
+              <br>
+              <em>NeurIPS</em>, 2025
+              <br>
+              <a href="https://www.arxiv.org/abs/2510.16916">paper</a> /
+              <a href="https://www.arxiv.org/abs/2510.16916">code</a> /
+
+              <p></p>
+              <p> We introduce SolverLLM, a training-free framework that leverages test-time scaling to solve diverse optimization problems.</p>
+            </td>
+          </tr>
+          
           <tr onmouseout="ACL2025_stop()" onmouseover="ACL2025_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -143,7 +177,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://openreview.net/pdf?id=MCHuGOkExF">
+              <a href="https://aclanthology.org/2025.acl-long.302/">
                 <papertitle>Uncertainty Propagation on LLM Agent</papertitle>
               </a>
               <br>
