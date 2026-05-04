@@ -105,6 +105,25 @@ name {
   font-size: 32px;
 }
 
+.news-scroll {
+  max-height: 14.5em;
+  overflow-y: auto;
+  margin-top: 10px;
+  padding-right: 10px;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.news-list {
+  margin: 8px 0;
+  padding-left: 20px;
+}
+
+.news-list li {
+  line-height: 1.45;
+  margin-bottom: 5px;
+}
+
 .one {
   width: 160px;
   height: 160px;
