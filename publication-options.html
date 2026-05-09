@@ -1,0 +1,783 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publication Layout Options | Xujiang Zhao</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <style>
+    body {
+      color: #222;
+      line-height: 1.45;
+    }
+
+    .preview-page {
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 28px 20px 48px;
+      box-sizing: border-box;
+    }
+
+    .preview-top {
+      margin-bottom: 28px;
+      border-bottom: 1px solid #e8e8e8;
+      padding-bottom: 16px;
+    }
+
+    .preview-top h1 {
+      margin: 0 0 8px;
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    .preview-top p {
+      margin: 0;
+      color: #666;
+    }
+
+    .layout-option {
+      margin-bottom: 44px;
+    }
+
+    .option-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 14px;
+      border-bottom: 2px solid #222;
+      padding-bottom: 8px;
+    }
+
+    .option-heading h2 {
+      margin: 0;
+      font-size: 21px;
+      font-weight: 700;
+    }
+
+    .option-note {
+      color: #777;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .pub-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .pub-item {
+      display: grid;
+      grid-template-columns: 38px minmax(0, 1fr);
+      gap: 12px;
+      padding: 13px 0;
+      border-bottom: 1px solid #ededed;
+    }
+
+    .pub-number {
+      color: #777;
+      font-size: 13px;
+      font-variant-numeric: tabular-nums;
+      line-height: 1.6;
+    }
+
+    .pub-title {
+      display: inline;
+      color: #111;
+      font-weight: 700;
+    }
+
+    .pub-title:hover {
+      color: #1772d0;
+    }
+
+    .pub-authors {
+      margin-top: 3px;
+      color: #444;
+    }
+
+    .pub-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 10px;
+      margin-top: 4px;
+      color: #666;
+      font-size: 13px;
+    }
+
+    .pub-meta span + span::before {
+      content: "/";
+      margin-right: 10px;
+      color: #bbb;
+    }
+
+    .category-group {
+      margin-top: 20px;
+    }
+
+    .category-heading {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin: 0 0 2px;
+      color: #111;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .category-count {
+      color: #777;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    .grouped .pub-item {
+      padding: 10px 0;
+    }
+
+    .grouped .pub-meta span + span::before {
+      content: "";
+      margin: 0;
+    }
+
+    @media (max-width: 620px) {
+      .preview-page {
+        padding: 22px 16px 38px;
+      }
+
+      .preview-top h1 {
+        font-size: 23px;
+      }
+
+      .option-heading {
+        display: block;
+      }
+
+      .option-note {
+        display: block;
+        margin-top: 4px;
+        white-space: normal;
+      }
+
+      .pub-item {
+        grid-template-columns: 32px minmax(0, 1fr);
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="preview-page">
+    <header class="preview-top">
+      <h1>Selected Publications Layout Preview</h1>
+      <p>Two plain-text options using the current selected publications.</p>
+    </header>
+
+    <section class="layout-option" aria-labelledby="option-one">
+      <div class="option-heading">
+        <h2 id="option-one">Option 1: Compact Numbered List</h2>
+        <span class="option-note">Best when the list is long and should stay dense.</span>
+      </div>
+
+      <ol class="pub-list">
+        <li class="pub-item">
+          <span class="pub-number">01</span>
+          <div>
+            <a class="pub-title" href="https://arxiv.org/abs/2510.08602">Human Texts Are Outliers: Detecting LLM-generated Texts via Out-of-distribution Detection</a>
+            <div class="pub-authors">Cong Zeng, Shengkun Tang, Yuanzhou Chen, Zhiqiang Shen, Wenchao Yu, <strong>Xujiang Zhao</strong>, <em>et al.</em></div>
+            <div class="pub-meta"><span>NeurIPS 2025</span><span>LLM Detection</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">02</span>
+          <div>
+            <a class="pub-title" href="https://www.arxiv.org/abs/2510.16916">SolverLLM: Leveraging Test-Time Scaling for Optimization Problem via LLM-Guided Search</a>
+            <div class="pub-authors">Dong Li, <strong>Xujiang Zhao</strong>, Linlin Yu, <em>et al.</em></div>
+            <div class="pub-meta"><span>NeurIPS 2025</span><span>Agentic AI</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">03</span>
+          <div>
+            <a class="pub-title" href="https://aclanthology.org/2025.acl-long.302/">Uncertainty Propagation on LLM Agent</a>
+            <div class="pub-authors">Qiwei Zhao, Dong Li, <em>et al.</em>, <strong>Xujiang Zhao</strong></div>
+            <div class="pub-meta"><span>ACL 2025</span><span>Agentic AI</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">04</span>
+          <div>
+            <a class="pub-title" href="https://arxiv.org/pdf/2305.18703.pdf">Domain Specialization as the Key to Make Large Language Models Disruptive: A Comprehensive Survey</a>
+            <div class="pub-authors">Chen Ling, <strong>Xujiang Zhao</strong>, Jiaying Lu, Chengyuan Deng, Can Zheng, Junxiang Wang, Tanmoy Chowdhury, <em>et al.</em></div>
+            <div class="pub-meta"><span>ACM Computing Surveys 2025</span><span>LLM Survey</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">05</span>
+          <div>
+            <a class="pub-title" href="https://openreview.net/pdf?id=MCHuGOkExF">SFS: Smarter Code Space Search Improves LLM Inference Scaling</a>
+            <div class="pub-authors">Jonathan Light, Yue Wu, Yiyou Sun, Wenchao Yu, Yanchi Liu, <strong>Xujiang Zhao</strong>, <em>et al.</em></div>
+            <div class="pub-meta"><span>ICLR 2025</span><span>Code LLM</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">06</span>
+          <div>
+            <a class="pub-title" href="https://openreview.net/pdf?id=4i8w8ETT1i">MixLLM: Dynamic Routing in Mixed Large Language Models</a>
+            <div class="pub-authors">Xinyuan Wang, Yanchi Liu, Wei Cheng, <strong>Xujiang Zhao</strong>, <em>et al.</em></div>
+            <div class="pub-meta"><span>NAACL 2025</span><span>LLM Systems</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">07</span>
+          <div>
+            <a class="pub-title" href="https://openreview.net/pdf?id=yBvR5bbfLK">Position Really Matters: Towards a Holistic Approach for Prompt Tuning</a>
+            <div class="pub-authors">Xianjun Yang, Wei Cheng, <strong>Xujiang Zhao</strong>, Wenchao Yu, Linda Ruth Petzold, Haifeng Chen</div>
+            <div class="pub-meta"><span>NAACL 2025 Findings</span><span>Prompt Tuning</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">08</span>
+          <div>
+            <a class="pub-title" href="data/SDM2025_paper.pdf">Evidence-Based Out-of-Distribution Detection on Multi-Label Graphs</a>
+            <div class="pub-authors">Ruomeng Ding, <strong>Xujiang Zhao</strong>, Chen Zhao, Minglai Shao, Zhengzhang Chen, Haifeng Chen</div>
+            <div class="pub-meta"><span>SDM 2025</span><span>Graph Learning</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">09</span>
+          <div>
+            <a class="pub-title" href="https://openreview.net/pdf?id=PSJO3vPcDc">Large Language Models Can Be Contextual Privacy Protection Learners</a>
+            <div class="pub-authors">Yijia Xiao, Yiqiao Jin, Yushi Bai, Yue Wu, Xianjun Yang, Xiao Luo, Wenchao Yu, <strong>Xujiang Zhao</strong>, <em>et al.</em></div>
+            <div class="pub-meta"><span>EMNLP 2024</span><span>Privacy AI</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">10</span>
+          <div>
+            <a class="pub-title" href="https://www.ijcai.org/proceedings/2024/0504.pdf">Towards Counterfactual Fairness-aware Domain Generalization in Changing Environments</a>
+            <div class="pub-authors">Yujie Lin, Chen Zhao, Minglai Shao, Baoluo Meng, <strong>Xujiang Zhao</strong>, Haifeng Chen</div>
+            <div class="pub-meta"><span>IJCAI 2024</span><span>Fairness AI</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">11</span>
+          <div>
+            <a class="pub-title" href="https://arxiv.org/pdf/2405.06275">Pruning as a Domain-specific LLM Extractor</a>
+            <div class="pub-authors">Nan Zhang, Yanchi Liu, <strong>Xujiang Zhao</strong>, Wei Cheng, Runxue Bao, Rui Zhang, Prasenjit Mitra, Haifeng Chen</div>
+            <div class="pub-meta"><span>NAACL 2024 Findings</span><span>Domain-specific LLM</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">12</span>
+          <div>
+            <a class="pub-title" href="https://arxiv.org/pdf/2402.10189.pdf">Uncertainty Quantification for In-Context Learning of Large Language Models</a>
+            <div class="pub-authors">Chen Ling, <strong>Xujiang Zhao</strong>, Xuchao Zhang, Wei Cheng, <em>et al.</em></div>
+            <div class="pub-meta"><span>NAACL 2024</span><span>LLM Uncertainty</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">13</span>
+          <div>
+            <a class="pub-title" href="data/EMNLP2023_paper.pdf">Open-ended Commonsense Reasoning with Unrestricted Answer Scope</a>
+            <div class="pub-authors">Chen Ling, Xuchao Zhang, <strong>Xujiang Zhao</strong>, <em>et al.</em></div>
+            <div class="pub-meta"><span>EMNLP 2023 Findings</span><span>Commonsense Reasoning</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">14</span>
+          <div>
+            <a class="pub-title" href="data/CIKM2023f_paper.pdf">Adaptation Speed Analysis for Fairness-aware Causal Models</a>
+            <div class="pub-authors">Yujie Lin, Chen Zhao, Minglai Shao, <strong>Xujiang Zhao</strong>, Haifeng Chen</div>
+            <div class="pub-meta"><span>CIKM 2023</span><span>Fairness AI</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">15</span>
+          <div>
+            <a class="pub-title" href="data/CIKM2023_paper.pdf">Calibrate Graph Neural Networks under Out-of-Distribution Nodes via Deep Q-learning</a>
+            <div class="pub-authors">Weili Shi, Xueying Yang, <strong>Xujiang Zhao</strong>, Haifeng Chen, Zhiqiang Tao, Sheng Li</div>
+            <div class="pub-meta"><span>CIKM 2023</span><span>Graph Learning</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">16</span>
+          <div>
+            <a class="pub-title" href="data/ICASSP2023_paper.pdf">Multi-Label Temporal Evidential Neural Networks for Early Event Detection</a>
+            <div class="pub-authors"><strong>Xujiang Zhao</strong>, Xuchao Zhang, Chen Zhao, Jin-hee Cho, Lance Kaplan, Dong Hyun Jeong, Audun J&oslash;sang, Haifeng Chen, Feng Chen</div>
+            <div class="pub-meta"><span>ICASSP 2023</span><span>Event Detection</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">17</span>
+          <div>
+            <a class="pub-title" href="https://arxiv.org/pdf/2302.02093.pdf">Knowledge-enhanced Neural Machine Reasoning: A Review</a>
+            <div class="pub-authors">Tanmoy Chowdhury, Chen Ling, Xuchao Zhang, <strong>Xujiang Zhao</strong>, Guangji Bai, Jian Pei, Haifeng Chen, Liang Zhao</div>
+            <div class="pub-meta"><span>Preprint 2023</span><span>Reasoning Survey</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">18</span>
+          <div>
+            <a class="pub-title" href="https://arxiv.org/pdf/2206.05675.pdf">A Survey on Uncertainty Reasoning and Quantification for Decision Making: Belief Theory Meets Deep Learning</a>
+            <div class="pub-authors">Zhen Guo*, Zelin Wan*, Qisheng Zhang*, <strong>Xujiang Zhao*</strong>, Feng Chen, Jin-hee Cho, Qi Zhang*, Lance Kaplan, Dong Hyun Jeong, Audun J&oslash;sang</div>
+            <div class="pub-meta"><span>Information Fusion 2023</span><span>Uncertainty Survey</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">19</span>
+          <div>
+            <a class="pub-title" href="data/ICDM2022.pdf">How Out-of-Distribution Data Hurts Semi-Supervised Learning</a>
+            <div class="pub-authors"><strong>Xujiang Zhao*</strong>, Krishnateja Killamsetty*, Rishabh Iyer, Feng Chen</div>
+            <div class="pub-meta"><span>ICDM 2022</span><span>Semi-supervised Learning</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">20</span>
+          <div>
+            <a class="pub-title" href="data/CIKM_2022.pdf">Calibrate Automated Graph Neural Network via Hyperparameter Uncertainty</a>
+            <div class="pub-authors">Xueying Yang, Jiamian Wang, <strong>Xujiang Zhao</strong>, Sheng Li, Zhiqiang Tao</div>
+            <div class="pub-meta"><span>CIKM 2022 Short Paper</span><span>Graph Learning</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">21</span>
+          <div>
+            <a class="pub-title" href="https://arxiv.org/pdf/2202.02441.pdf">SEED: Sound Event Early Detection via Evidential Uncertainty</a>
+            <div class="pub-authors"><strong>Xujiang Zhao</strong>, Xuchao Zhang, Wei Cheng, Wenchao Yu, Yuncong Chen, Haifeng Chen, Feng Chen</div>
+            <div class="pub-meta"><span>ICASSP 2022</span><span>Event Detection</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">22</span>
+          <div>
+            <a class="pub-title" href="https://arxiv.org/pdf/2203.00192.pdf">Layer Adaptive Deep Neural Networks for Out-of-distribution Detection</a>
+            <div class="pub-authors">Haoliang Wang, Chen Zhao, <strong>Xujiang Zhao</strong>, Feng Chen</div>
+            <div class="pub-meta"><span>PAKDD 2022</span><span>OOD Detection</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">23</span>
+          <div>
+            <a class="pub-title" href="https://arxiv.org/pdf/2106.07760.pdf">RETRIEVE: Coreset Selection for Efficient and Robust Semi-Supervised Learning</a>
+            <div class="pub-authors">Krishnateja Killamsetty, <strong>Xujiang Zhao</strong>, Rishabh Iyer, Feng Chen</div>
+            <div class="pub-meta"><span>NeurIPS 2021</span><span>Semi-supervised Learning</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">24</span>
+          <div>
+            <a class="pub-title" href="https://arxiv.org/abs/2109.00194">Boosting Cross-Lingual Transfer via Self-Learning with Uncertainty Estimation</a>
+            <div class="pub-authors">Liyan Xu, Xuchao Zhang, <strong>Xujiang Zhao</strong>, Haifeng Chen, Feng Chen, Jinho D. Choi</div>
+            <div class="pub-meta"><span>EMNLP 2021 Short Paper, Oral</span><span>Cross-lingual NLP</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">25</span>
+          <div>
+            <a class="pub-title" href="https://dl.acm.org/doi/abs/10.1145/3442381.3449820">CLEAR: Contrastive-Prototype Learning with Drift Estimation for Resource Constrained Stream Mining</a>
+            <div class="pub-authors">Zhuoyi Wang, Chen Zhao, Yuqiao Chen, Hemeng Tao, Yu Lin, <strong>Xujiang Zhao</strong>, Yigong Wang, Latifur Khan</div>
+            <div class="pub-meta"><span>WWW 2021</span><span>Data Mining</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">26</span>
+          <div>
+            <a class="pub-title" href="https://arxiv.org/pdf/2012.13676.pdf">Multidimensional Uncertainty-Aware Evidential Neural Networks</a>
+            <div class="pub-authors">Yibo Hu, Yuzhe Ou, <strong>Xujiang Zhao</strong>, Feng Chen, Jin-hee Cho</div>
+            <div class="pub-meta"><span>AAAI 2021</span><span>Uncertainty Learning</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">27</span>
+          <div>
+            <a class="pub-title" href="https://arxiv.org/pdf/2010.12783">Uncertainty Aware Semi-Supervised Learning on Graph Data</a>
+            <div class="pub-authors"><strong>Xujiang Zhao</strong>, Feng Chen, Shu Hu, Jin-hee Cho</div>
+            <div class="pub-meta"><span>NeurIPS 2020 Spotlight</span><span>Graph Learning</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">28</span>
+          <div>
+            <a class="pub-title" href="data/NIPS2020_ADL_papre.pdf">Multifaceted Uncertainty Estimation for Label-Efficient Deep Learning</a>
+            <div class="pub-authors">Weishi Shi, <strong>Xujiang Zhao</strong>, Feng Chen, Qi Yu</div>
+            <div class="pub-meta"><span>NeurIPS 2020</span><span>Uncertainty Learning</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">29</span>
+          <div>
+            <a class="pub-title" href="data/Bigdata_2019_Adv_COI.pdf">Uncertainty-Aware Opinion Inference Under Adversarial Attacks</a>
+            <div class="pub-authors">Adil Alim, <strong>Xujiang Zhao</strong>, Jin-hee Cho, Feng Chen</div>
+            <div class="pub-meta"><span>BigData 2019</span><span>Opinion Mining</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">30</span>
+          <div>
+            <a class="pub-title" href="data/AAAI_2019_FALL_SYMPOSIUM_SERIES.pdf">Quantifying Classification Uncertainty using Regularized Evidential Neural Networks</a>
+            <div class="pub-authors"><strong>Xujiang Zhao</strong>, Yuzhe Ou, Lance Kaplan, Feng Chen, Jin-hee Cho</div>
+            <div class="pub-meta"><span>AAAI 2019 Fall Symposium Series</span><span>Uncertainty Learning</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">31</span>
+          <div>
+            <a class="pub-title" href="./data/FUSION_2019_camera_ready.pdf">Uncertainty-based Decision Making Using Deep Reinforcement Learning</a>
+            <div class="pub-authors"><strong>Xujiang Zhao</strong>, Shu Hu, Jin-hee Cho, Feng Chen</div>
+            <div class="pub-meta"><span>FUSION 2019</span><span>Reinforcement Learning</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">32</span>
+          <div>
+            <a class="pub-title" href="https://arxiv.org/abs/1910.05640">Deep Learning for Predicting Dynamic Uncertain Opinions in Network Data</a>
+            <div class="pub-authors"><strong>Xujiang Zhao</strong>, Feng Chen, Jin-hee Cho</div>
+            <div class="pub-meta"><span>BigData 2018</span><span>Opinion Mining</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">33</span>
+          <div>
+            <a class="pub-title" href="./data/Deep Learning based Scalable Inference of Uncertainty Opinion.pdf">Deep Learning based Scalable Inference of Uncertain Opinions</a>
+            <div class="pub-authors"><strong>Xujiang Zhao</strong>, Feng Chen, Jin-hee Cho</div>
+            <div class="pub-meta"><span>ICDM 2018</span><span>Opinion Mining</span></div>
+          </div>
+        </li>
+        <li class="pub-item">
+          <span class="pub-number">34</span>
+          <div>
+            <a class="pub-title" href="./data/Uncertainty-Based Opinion Inference on Network Data Using Graph Convolutional Neural Networks.pdf">Uncertainty-Based Opinion Inference on Network Data Using Graph Convolutional Neural Networks</a>
+            <div class="pub-authors"><strong>Xujiang Zhao</strong>, Feng Chen, Jin-hee Cho</div>
+            <div class="pub-meta"><span>MILCOM 2018</span><span>Opinion Mining</span></div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="layout-option" aria-labelledby="option-four">
+      <div class="option-heading">
+        <h2 id="option-four">Option 4: Grouped by Category</h2>
+        <span class="option-note">Best when research directions should stand out.</span>
+      </div>
+
+      <section class="category-group" aria-labelledby="agentic-ai">
+        <h3 class="category-heading" id="agentic-ai">Agentic AI and LLM Systems <span class="category-count">6 papers</span></h3>
+        <ol class="pub-list grouped">
+          <li class="pub-item">
+            <span class="pub-number">02</span>
+            <div>
+              <a class="pub-title" href="https://www.arxiv.org/abs/2510.16916">SolverLLM: Leveraging Test-Time Scaling for Optimization Problem via LLM-Guided Search</a>
+              <div class="pub-authors">Dong Li, <strong>Xujiang Zhao</strong>, Linlin Yu, <em>et al.</em></div>
+              <div class="pub-meta"><span>NeurIPS 2025</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">03</span>
+            <div>
+              <a class="pub-title" href="https://aclanthology.org/2025.acl-long.302/">Uncertainty Propagation on LLM Agent</a>
+              <div class="pub-authors">Qiwei Zhao, Dong Li, <em>et al.</em>, <strong>Xujiang Zhao</strong></div>
+              <div class="pub-meta"><span>ACL 2025</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">05</span>
+            <div>
+              <a class="pub-title" href="https://openreview.net/pdf?id=MCHuGOkExF">SFS: Smarter Code Space Search Improves LLM Inference Scaling</a>
+              <div class="pub-authors">Jonathan Light, Yue Wu, Yiyou Sun, Wenchao Yu, Yanchi Liu, <strong>Xujiang Zhao</strong>, <em>et al.</em></div>
+              <div class="pub-meta"><span>ICLR 2025</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">06</span>
+            <div>
+              <a class="pub-title" href="https://openreview.net/pdf?id=4i8w8ETT1i">MixLLM: Dynamic Routing in Mixed Large Language Models</a>
+              <div class="pub-authors">Xinyuan Wang, Yanchi Liu, Wei Cheng, <strong>Xujiang Zhao</strong>, <em>et al.</em></div>
+              <div class="pub-meta"><span>NAACL 2025</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">07</span>
+            <div>
+              <a class="pub-title" href="https://openreview.net/pdf?id=yBvR5bbfLK">Position Really Matters: Towards a Holistic Approach for Prompt Tuning</a>
+              <div class="pub-authors">Xianjun Yang, Wei Cheng, <strong>Xujiang Zhao</strong>, Wenchao Yu, Linda Ruth Petzold, Haifeng Chen</div>
+              <div class="pub-meta"><span>NAACL 2025 Findings</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">12</span>
+            <div>
+              <a class="pub-title" href="https://arxiv.org/pdf/2402.10189.pdf">Uncertainty Quantification for In-Context Learning of Large Language Models</a>
+              <div class="pub-authors">Chen Ling, <strong>Xujiang Zhao</strong>, Xuchao Zhang, Wei Cheng, <em>et al.</em></div>
+              <div class="pub-meta"><span>NAACL 2024</span></div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="category-group" aria-labelledby="llm-domain">
+        <h3 class="category-heading" id="llm-domain">LLM Detection, Domain Specialization and Privacy <span class="category-count">4 papers</span></h3>
+        <ol class="pub-list grouped">
+          <li class="pub-item">
+            <span class="pub-number">01</span>
+            <div>
+              <a class="pub-title" href="https://arxiv.org/abs/2510.08602">Human Texts Are Outliers: Detecting LLM-generated Texts via Out-of-distribution Detection</a>
+              <div class="pub-authors">Cong Zeng, Shengkun Tang, Yuanzhou Chen, Zhiqiang Shen, Wenchao Yu, <strong>Xujiang Zhao</strong>, <em>et al.</em></div>
+              <div class="pub-meta"><span>NeurIPS 2025</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">04</span>
+            <div>
+              <a class="pub-title" href="https://arxiv.org/pdf/2305.18703.pdf">Domain Specialization as the Key to Make Large Language Models Disruptive: A Comprehensive Survey</a>
+              <div class="pub-authors">Chen Ling, <strong>Xujiang Zhao</strong>, Jiaying Lu, Chengyuan Deng, Can Zheng, Junxiang Wang, Tanmoy Chowdhury, <em>et al.</em></div>
+              <div class="pub-meta"><span>ACM Computing Surveys 2025</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">09</span>
+            <div>
+              <a class="pub-title" href="https://openreview.net/pdf?id=PSJO3vPcDc">Large Language Models Can Be Contextual Privacy Protection Learners</a>
+              <div class="pub-authors">Yijia Xiao, Yiqiao Jin, Yushi Bai, Yue Wu, Xianjun Yang, Xiao Luo, Wenchao Yu, <strong>Xujiang Zhao</strong>, <em>et al.</em></div>
+              <div class="pub-meta"><span>EMNLP 2024</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">11</span>
+            <div>
+              <a class="pub-title" href="https://arxiv.org/pdf/2405.06275">Pruning as a Domain-specific LLM Extractor</a>
+              <div class="pub-authors">Nan Zhang, Yanchi Liu, <strong>Xujiang Zhao</strong>, Wei Cheng, Runxue Bao, Rui Zhang, Prasenjit Mitra, Haifeng Chen</div>
+              <div class="pub-meta"><span>NAACL 2024 Findings</span></div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="category-group" aria-labelledby="reasoning">
+        <h3 class="category-heading" id="reasoning">Reasoning and NLP <span class="category-count">3 papers</span></h3>
+        <ol class="pub-list grouped">
+          <li class="pub-item">
+            <span class="pub-number">13</span>
+            <div>
+              <a class="pub-title" href="data/EMNLP2023_paper.pdf">Open-ended Commonsense Reasoning with Unrestricted Answer Scope</a>
+              <div class="pub-authors">Chen Ling, Xuchao Zhang, <strong>Xujiang Zhao</strong>, <em>et al.</em></div>
+              <div class="pub-meta"><span>EMNLP 2023 Findings</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">17</span>
+            <div>
+              <a class="pub-title" href="https://arxiv.org/pdf/2302.02093.pdf">Knowledge-enhanced Neural Machine Reasoning: A Review</a>
+              <div class="pub-authors">Tanmoy Chowdhury, Chen Ling, Xuchao Zhang, <strong>Xujiang Zhao</strong>, Guangji Bai, Jian Pei, Haifeng Chen, Liang Zhao</div>
+              <div class="pub-meta"><span>Preprint 2023</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">24</span>
+            <div>
+              <a class="pub-title" href="https://arxiv.org/abs/2109.00194">Boosting Cross-Lingual Transfer via Self-Learning with Uncertainty Estimation</a>
+              <div class="pub-authors">Liyan Xu, Xuchao Zhang, <strong>Xujiang Zhao</strong>, Haifeng Chen, Feng Chen, Jinho D. Choi</div>
+              <div class="pub-meta"><span>EMNLP 2021 Short Paper, Oral</span></div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="category-group" aria-labelledby="uncertainty">
+        <h3 class="category-heading" id="uncertainty">Uncertainty Quantification and Evidential Learning <span class="category-count">7 papers</span></h3>
+        <ol class="pub-list grouped">
+          <li class="pub-item">
+            <span class="pub-number">16</span>
+            <div>
+              <a class="pub-title" href="data/ICASSP2023_paper.pdf">Multi-Label Temporal Evidential Neural Networks for Early Event Detection</a>
+              <div class="pub-authors"><strong>Xujiang Zhao</strong>, Xuchao Zhang, Chen Zhao, Jin-hee Cho, Lance Kaplan, Dong Hyun Jeong, Audun J&oslash;sang, Haifeng Chen, Feng Chen</div>
+              <div class="pub-meta"><span>ICASSP 2023</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">18</span>
+            <div>
+              <a class="pub-title" href="https://arxiv.org/pdf/2206.05675.pdf">A Survey on Uncertainty Reasoning and Quantification for Decision Making: Belief Theory Meets Deep Learning</a>
+              <div class="pub-authors">Zhen Guo*, Zelin Wan*, Qisheng Zhang*, <strong>Xujiang Zhao*</strong>, Feng Chen, Jin-hee Cho, Qi Zhang*, Lance Kaplan, Dong Hyun Jeong, Audun J&oslash;sang</div>
+              <div class="pub-meta"><span>Information Fusion 2023</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">21</span>
+            <div>
+              <a class="pub-title" href="https://arxiv.org/pdf/2202.02441.pdf">SEED: Sound Event Early Detection via Evidential Uncertainty</a>
+              <div class="pub-authors"><strong>Xujiang Zhao</strong>, Xuchao Zhang, Wei Cheng, Wenchao Yu, Yuncong Chen, Haifeng Chen, Feng Chen</div>
+              <div class="pub-meta"><span>ICASSP 2022</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">22</span>
+            <div>
+              <a class="pub-title" href="https://arxiv.org/pdf/2203.00192.pdf">Layer Adaptive Deep Neural Networks for Out-of-distribution Detection</a>
+              <div class="pub-authors">Haoliang Wang, Chen Zhao, <strong>Xujiang Zhao</strong>, Feng Chen</div>
+              <div class="pub-meta"><span>PAKDD 2022</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">26</span>
+            <div>
+              <a class="pub-title" href="https://arxiv.org/pdf/2012.13676.pdf">Multidimensional Uncertainty-Aware Evidential Neural Networks</a>
+              <div class="pub-authors">Yibo Hu, Yuzhe Ou, <strong>Xujiang Zhao</strong>, Feng Chen, Jin-hee Cho</div>
+              <div class="pub-meta"><span>AAAI 2021</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">28</span>
+            <div>
+              <a class="pub-title" href="data/NIPS2020_ADL_papre.pdf">Multifaceted Uncertainty Estimation for Label-Efficient Deep Learning</a>
+              <div class="pub-authors">Weishi Shi, <strong>Xujiang Zhao</strong>, Feng Chen, Qi Yu</div>
+              <div class="pub-meta"><span>NeurIPS 2020</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">30</span>
+            <div>
+              <a class="pub-title" href="data/AAAI_2019_FALL_SYMPOSIUM_SERIES.pdf">Quantifying Classification Uncertainty using Regularized Evidential Neural Networks</a>
+              <div class="pub-authors"><strong>Xujiang Zhao</strong>, Yuzhe Ou, Lance Kaplan, Feng Chen, Jin-hee Cho</div>
+              <div class="pub-meta"><span>AAAI 2019 Fall Symposium Series</span></div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="category-group" aria-labelledby="graph-ssl">
+        <h3 class="category-heading" id="graph-ssl">Graph Learning and Semi-supervised Learning <span class="category-count">6 papers</span></h3>
+        <ol class="pub-list grouped">
+          <li class="pub-item">
+            <span class="pub-number">08</span>
+            <div>
+              <a class="pub-title" href="data/SDM2025_paper.pdf">Evidence-Based Out-of-Distribution Detection on Multi-Label Graphs</a>
+              <div class="pub-authors">Ruomeng Ding, <strong>Xujiang Zhao</strong>, Chen Zhao, Minglai Shao, Zhengzhang Chen, Haifeng Chen</div>
+              <div class="pub-meta"><span>SDM 2025</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">15</span>
+            <div>
+              <a class="pub-title" href="data/CIKM2023_paper.pdf">Calibrate Graph Neural Networks under Out-of-Distribution Nodes via Deep Q-learning</a>
+              <div class="pub-authors">Weili Shi, Xueying Yang, <strong>Xujiang Zhao</strong>, Haifeng Chen, Zhiqiang Tao, Sheng Li</div>
+              <div class="pub-meta"><span>CIKM 2023</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">19</span>
+            <div>
+              <a class="pub-title" href="data/ICDM2022.pdf">How Out-of-Distribution Data Hurts Semi-Supervised Learning</a>
+              <div class="pub-authors"><strong>Xujiang Zhao*</strong>, Krishnateja Killamsetty*, Rishabh Iyer, Feng Chen</div>
+              <div class="pub-meta"><span>ICDM 2022</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">20</span>
+            <div>
+              <a class="pub-title" href="data/CIKM_2022.pdf">Calibrate Automated Graph Neural Network via Hyperparameter Uncertainty</a>
+              <div class="pub-authors">Xueying Yang, Jiamian Wang, <strong>Xujiang Zhao</strong>, Sheng Li, Zhiqiang Tao</div>
+              <div class="pub-meta"><span>CIKM 2022 Short Paper</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">23</span>
+            <div>
+              <a class="pub-title" href="https://arxiv.org/pdf/2106.07760.pdf">RETRIEVE: Coreset Selection for Efficient and Robust Semi-Supervised Learning</a>
+              <div class="pub-authors">Krishnateja Killamsetty, <strong>Xujiang Zhao</strong>, Rishabh Iyer, Feng Chen</div>
+              <div class="pub-meta"><span>NeurIPS 2021</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">27</span>
+            <div>
+              <a class="pub-title" href="https://arxiv.org/pdf/2010.12783">Uncertainty Aware Semi-Supervised Learning on Graph Data</a>
+              <div class="pub-authors"><strong>Xujiang Zhao</strong>, Feng Chen, Shu Hu, Jin-hee Cho</div>
+              <div class="pub-meta"><span>NeurIPS 2020 Spotlight</span></div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="category-group" aria-labelledby="fairness-data">
+        <h3 class="category-heading" id="fairness-data">Fairness, Data Mining and Reinforcement Learning <span class="category-count">4 papers</span></h3>
+        <ol class="pub-list grouped">
+          <li class="pub-item">
+            <span class="pub-number">10</span>
+            <div>
+              <a class="pub-title" href="https://www.ijcai.org/proceedings/2024/0504.pdf">Towards Counterfactual Fairness-aware Domain Generalization in Changing Environments</a>
+              <div class="pub-authors">Yujie Lin, Chen Zhao, Minglai Shao, Baoluo Meng, <strong>Xujiang Zhao</strong>, Haifeng Chen</div>
+              <div class="pub-meta"><span>IJCAI 2024</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">14</span>
+            <div>
+              <a class="pub-title" href="data/CIKM2023f_paper.pdf">Adaptation Speed Analysis for Fairness-aware Causal Models</a>
+              <div class="pub-authors">Yujie Lin, Chen Zhao, Minglai Shao, <strong>Xujiang Zhao</strong>, Haifeng Chen</div>
+              <div class="pub-meta"><span>CIKM 2023</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">25</span>
+            <div>
+              <a class="pub-title" href="https://dl.acm.org/doi/abs/10.1145/3442381.3449820">CLEAR: Contrastive-Prototype Learning with Drift Estimation for Resource Constrained Stream Mining</a>
+              <div class="pub-authors">Zhuoyi Wang, Chen Zhao, Yuqiao Chen, Hemeng Tao, Yu Lin, <strong>Xujiang Zhao</strong>, Yigong Wang, Latifur Khan</div>
+              <div class="pub-meta"><span>WWW 2021</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">31</span>
+            <div>
+              <a class="pub-title" href="./data/FUSION_2019_camera_ready.pdf">Uncertainty-based Decision Making Using Deep Reinforcement Learning</a>
+              <div class="pub-authors"><strong>Xujiang Zhao</strong>, Shu Hu, Jin-hee Cho, Feng Chen</div>
+              <div class="pub-meta"><span>FUSION 2019</span></div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="category-group" aria-labelledby="opinion-mining">
+        <h3 class="category-heading" id="opinion-mining">Opinion Mining and Network Data <span class="category-count">4 papers</span></h3>
+        <ol class="pub-list grouped">
+          <li class="pub-item">
+            <span class="pub-number">29</span>
+            <div>
+              <a class="pub-title" href="data/Bigdata_2019_Adv_COI.pdf">Uncertainty-Aware Opinion Inference Under Adversarial Attacks</a>
+              <div class="pub-authors">Adil Alim, <strong>Xujiang Zhao</strong>, Jin-hee Cho, Feng Chen</div>
+              <div class="pub-meta"><span>BigData 2019</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">32</span>
+            <div>
+              <a class="pub-title" href="https://arxiv.org/abs/1910.05640">Deep Learning for Predicting Dynamic Uncertain Opinions in Network Data</a>
+              <div class="pub-authors"><strong>Xujiang Zhao</strong>, Feng Chen, Jin-hee Cho</div>
+              <div class="pub-meta"><span>BigData 2018</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">33</span>
+            <div>
+              <a class="pub-title" href="./data/Deep Learning based Scalable Inference of Uncertainty Opinion.pdf">Deep Learning based Scalable Inference of Uncertain Opinions</a>
+              <div class="pub-authors"><strong>Xujiang Zhao</strong>, Feng Chen, Jin-hee Cho</div>
+              <div class="pub-meta"><span>ICDM 2018</span></div>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-number">34</span>
+            <div>
+              <a class="pub-title" href="./data/Uncertainty-Based Opinion Inference on Network Data Using Graph Convolutional Neural Networks.pdf">Uncertainty-Based Opinion Inference on Network Data Using Graph Convolutional Neural Networks</a>
+              <div class="pub-authors"><strong>Xujiang Zhao</strong>, Feng Chen, Jin-hee Cho</div>
+              <div class="pub-meta"><span>MILCOM 2018</span></div>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
