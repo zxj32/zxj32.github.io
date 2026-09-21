@@ -347,6 +347,7 @@ a.cv-pub-title:hover {
   color: #ff7a00;
 }
 
+.cv-pub-tag-benchmark,
 .cv-pub-tag-code-generation,
 .cv-pub-tag-memory,
 .cv-pub-tag-model-compression,
